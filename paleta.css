@@ -1,0 +1,40 @@
+.btn-box:hover {
+    background-color: #00a8ea;
+    color: #353535;
+}
+
+#fundo{
+    background: #00a8ea;
+}
+.btn {
+    background:#353535;
+}
+body{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #353535;
+    background-color: #3a3132;
+    color: white;
+}
+.card-text {
+    background-color: #322f3e;
+  }
+p {
+    background-color: #4d4143;
+    padding: 10px;
+    font-size: 18px;
+    align-content: center;
+    align-items: center;
+}
+h1 {
+    background-color: #0f4571;
+    padding: 30px;
+    font-weight: 500;
+}
+h2 {
+    background-color: #009ddd;
+    padding: 30px;
+}
+.card-body {
+    background-color: #05d3f8;
+}
