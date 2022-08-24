@@ -10,39 +10,45 @@ body{
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     color: #353535;
-    background-color: #3a3132;
+    background-color: #031927;
     color: white;
     margin: 0;
     text-align: justify;
 }
 
 .card-text {
-  background-color: #322f3e;
+  background-color: #424040;
+  color: white;
+  border: black solid 1px;
 }
 p {
-  background-color: #4d4143;
+  background-color: rgba(19, 64, 92, 255);
   padding: 10px;
   font-size: 18px;
   align-content: center;
   align-items: center;
 }
 h1 {
-  background-color: #e73c7e;
+  background-color: #FCBA04;
+  color: black;
+  font-weight: bolder;
   padding: 30px;
   font-weight: 500;
 }
 h2 {
-  background-color: #009ddd;
+  background-color: #3E92CC;
   padding: 30px;
 }
 .card-body {
-  background-color: #05d3f8;
+  background-color: #FCBA04;
+  color: black;
+  font-weight: 400;
 }
 html {
   scroll-behavior: smooth;
 }
 .navbar-expand-lg {
-  background-color: #23a6d5 !important;
+  background-color: #ba1200 !important;
   color: white !important;
 }
 #nav {
@@ -137,7 +143,7 @@ html {
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 6px;
-    background:#353535;
+    background: #3E92CC;
     position: relative;
     transition: all 0.8s ease;
     -webkit-transition: all 0.3s ease;
@@ -234,7 +240,7 @@ html {
 }
 .dynamic-txts li{
   list-style: none;
-  background-color: #0f4571;
+  background-color: rgba(19, 64, 92, 255);
   color: #16f37d;
   font-size: 50px;
   font-weight: 500;
@@ -248,7 +254,7 @@ html {
   }
 }
 .classedoelemento>div {
-  background-color: #0f4571;
+  background-color: rgba(19, 64, 92, 255);
 }
 .dynamic-txts li span::after{
   content: "";
@@ -257,7 +263,7 @@ html {
   margin-top: 10px;
   height: 100px;
   width: 100%;
-  background: #0f4571;
+  background: rgba(19, 64, 92, 255);
   border-left: 2px solid #16f37d;
   animation:  typing 3s steps(10) infinite;
 }
