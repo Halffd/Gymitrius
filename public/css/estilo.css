@@ -1,0 +1,30 @@
+body {
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #001027;
+    margin-top: 30px;
+    background-color: #031927
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    border: 1px solid rgb(216, 56, 94);
+}
+a {
+    color: black !important;
+    border: 0.5px solid white;
+}
+.gymmitrus {
+    background-color: aliceblue;
+    border: 1px solid black;
+}
+#botao {
+    display: none;
+}
+input {
+    width: 75%;
+    height: 82%;
+}

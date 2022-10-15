@@ -1,0 +1,46 @@
+{
+  "name": "gymitrius",
+  "version": "1.0.0",
+  "description": "In this small project you can register, login and logout. create database using login as a table and there shcema should be as below create table(id int auto_increment primary key not null, name varchar(255), email varchar(255), password varchar(255));",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "build": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gustavo",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bootstrap": "^5.2.2",
+    "consolidate": "^0.16.0",
+    "ejs": "^3.1.8",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.14.2",
+    "install": "^0.13.0",
+    "jquery": "^3.6.1",
+    "md5": "^2.3.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.20",
+    "npm": "^8.19.2",
+    "path": "^0.12.7",
+    "php-express": "^0.0.3",
+    "puppeteer": "^19.0.0",
+    "react": "^18.2.0",
+    "redux": "^4.2.0",
+    "swig": "^1.4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Halffd/gymitrius.git"
+  },
+  "keywords": [
+    "projeto"
+  ],
+  "proxy": "http://localhost:3000/",
+  "bugs": {
+    "url": "https://github.com/Halffd/gymitrius/issues"
+  },
+  "homepage": "https://github.com/Halffd/gymitrius#readme"
+}

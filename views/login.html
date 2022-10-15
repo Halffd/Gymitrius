@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/tela.css">
+</head>
+<body>
+   <div class="container"> 
+    <form id="form" action="/pages/login" method="post">
+        <fieldset>
+          <div class="login-button">
+            <button><a href="/">Home</a></button>
+        </div>
+            <h1>Gymitrius</h1> 
+            <h3>Insira seu e-mail e senha</h3>
+            <p>É o mesmo que você usou pra cadastrar no Gymitrius.</p>
+            <br>
+
+            <div class="inputBox">
+                <label class="label">E-mail</label>
+                <br>
+                <input type="email" name="email" id="email" class="inputUser"; required>
+            </div>
+            <br>
+            <div class="inputBox">
+                <label class="label">Senha</label>
+                <br id="err">
+                <input type="password" name="senha" id="senha" class="inputUser" required>
+                <i class="fa fa-eye" id="text"></i>
+                <i class="fa fa-eye-slash" id="pass"></i>
+        
+            </div>
+            <br>
+            <br>
+            <a style="text-decoration: none; color:black" href="#">Esqueceu a senha?</a>
+            <br>
+            <br>
+            <a style="text-decoration: none; color:black" href="/">Cadastre-se</a>
+            <br>
+            <br>
+            <button id="continuar" class="btn float-shadow">Continuar</button>
+        </fieldset>
+    </form>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.1.slim.js" integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+<script src="../js/login.js"></script> 
+</body>
+    
+    <!--var tipo = document.getElementById('senha')
+
+document.getElementById('pass').addEventListener('click', () => {
+  if(tipo.value) {
+    tipo.type == 'password' ? tipo.type = 'text' : tipo.type = 'password';
+    tipo.focus()
+    document.getElementById('pass').style.display = 'none';
+    document.getElementById('text').style.display = 'inline-block';
+  }
+})
+
+document.getElementById('text').addEventListener('click', () => {
+  if(tipo.value) {
+    tipo.type == 'text' ? tipo.type = 'password' : tipo.type = 'text';
+    tipo.focus()
+    document.getElementById('text').style.display = 'none';
+    document.getElementById('pass').style.display = 'inline-block';
+  }
+})*/-->
+</html>

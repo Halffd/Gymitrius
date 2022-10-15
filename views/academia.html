@@ -1,0 +1,93 @@
+<?php
+$erro_usuario	= isset($_GET['erro_usuario'])	? $_GET['erro_usuario'] : 0;
+$erro_email		= isset($_GET['erro_email'])	? $_GET['erro_email']	: 0;
+$erro_telefone  = isset($_GET['erro_telefone'])	? $_GET['erro_telefone']	: 0;;
+$erro_cnpj		= isset($_GET['erro_cnpj'])	? $_GET['erro_cnpj']	: 0;
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Formulário de cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-image" style="background-color: rgb(32,23,18);">
+            <img src="../img/Acad.jpg" alt="Academia" style="width: 100%; height: auto;">
+        </div>
+        <div class="form">
+            <form method="post" action="registra_academia.php" id="formCadastrarse">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Academia</h1>
+                    </div>
+                    <div class="login-button">
+                        <button type="reset"><a href="/">Home</a></button>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Nome da Academia</label>
+                        <input id="firstname" type="text" id="nome" name="nome" placeholder="Digite o nome da academia" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite o e-mail da academia" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="telefone">Celular</label>
+                        <input id="telefone" name="telefone" type="tel" placeholder="(xx) xxxx-xxxx" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="endereco">Endereço</label>
+                        <input type="text" id="endereco" name="endereco" placeholder="Digite o endereço" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="cnpj">CNPJ</label>
+                        <input type="number" id="cnpj" name="cnpj" placeholder="xx.xxx.xxx/xxxx-xx" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="preco">Preço Médio</label>
+                        <input type="number" id="preco" name="preco" placeholder="R$xxx,xx" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" name="password" placeholder="Digite a senha da academia">
+                    </div>
+                    <div class="input-box">
+                        <label for="confirmPassword">Confirmar Senha</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Digite a senha novamente">
+                    </div>
+                    <div class="input-box">
+                        <label for="cupom">Cupom</label>
+                        <input type="number" id="cupom" name="cupom" placeholder="Insira um Cupom se tiver">
+                    </div>
+                    <div class="input-box">
+                        <label for="imagem">Imagem</label>
+                        <input type="file" class="form-control" id="imagem" name="imagem" placeholder="Imagem da Academia">
+                    </div>
+
+                </div>
+
+                <div class="continue-button">
+                    <button type="submit" name="submit"><a href="#">Continuar</a> </button>
+                </div>
+            </form>
+        </div>
+    </div>
+<script src="../jquery/jquery.min.js"></script>
+<script href="../bootstrap/js/bootstrap.js"></script>
+<script src="../js/main.js"></script>
+
+</body>
+
+</html>

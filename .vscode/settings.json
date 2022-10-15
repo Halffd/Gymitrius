@@ -1,0 +1,23 @@
+{
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#043601",
+        "titleBar.activeBackground": "#064C02",
+        "titleBar.activeForeground": "#EDFFEC"
+    },
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "Gymitrius",
+            "group": "Gymi",
+            "database": "academias",
+            "username": "root",
+            "password": ""
+        }
+    ]
+}
