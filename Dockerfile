@@ -2,10 +2,9 @@ FROM node:lts-alpine as web-app
 ENV NODE_ENV=production
 # Move our files into directory name "app"
 WORKDIR /app
-COPY client/package.json /app/
-RUN cd /app && npm install
-COPY client/. /app
-RUN cd /app && npm run build  // build your front end
+COPY package*.json ./
+RUN npm install
+COPY . .
 
 EXPOSE 3000
 
