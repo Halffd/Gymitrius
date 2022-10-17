@@ -90,20 +90,26 @@ router.get('/academia',(req, res)=>{
 router.get('/gymitrius',(req, res)=>{
   if(!req.session.loggedIn){
     (async () => {
-        var academias, dados, b64, img;
+        var academias, dados, img;
+        var b64 = [];
         try {
           console.log("Querying");
           academias = await query('select count(*) as count from academia');
-          dados = await query('select id, nome, email, telefone, endereco, cnpj, preco, cupom, imagem as dados from academia');
-          console.log(academias[0].count);
-          console.log(dados);
-          img = await query('select imagem as imagem from academia where id=1');
-          b64 = Buffer.from(img[0].imagem).toString('base64');
-          console.log(b64);
+          dados = await query('select id, nome, email, telefone, endereco, cnpj, preco, cupom, imagem from academia');
+          console.log(dados)
+          for(var i = 0; i<=academias[0].count; i++) {
+            try {
+              console.log(dados[i].imagem)
+              b64.push(Buffer.from(dados[i].imagem).toString('base64'));
+              console.log(b64[i])
+            } catch(err){
+              b64.push(null)
+            }
+          }
         } catch (error) {
           console.error(error);
         } finally {
-          res.render('gymitrius', {data : dados, quant: academias, image: b64});
+          res.render('gymitrius', {data : dados, quant: academias, imagem: b64});
 
         }
     })()
