@@ -93,7 +93,6 @@ router.get('/gymitrius',(req, res)=>{
         var academias, dados, b64, img;
         try {
           console.log("Querying");
-          con.connect();
           academias = await query('select count(*) as count from academia');
           dados = await query('select id, nome, email, telefone, endereco, cnpj, preco, cupom, imagem as dados from academia');
           console.log(academias[0].count);
@@ -104,8 +103,8 @@ router.get('/gymitrius',(req, res)=>{
         } catch (error) {
           console.error(error);
         } finally {
-          con.end();
           res.render('gymitrius', {data : dados, quant: academias, image: b64});
+
         }
     })()
 }else{
