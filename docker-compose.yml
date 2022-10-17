@@ -6,7 +6,10 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
+    command: npm start
     environment:
       NODE_ENV: production
+    volumes:
+       - .:/usr/app
     ports:
       - 3000:3000
