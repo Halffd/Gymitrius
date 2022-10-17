@@ -31,7 +31,6 @@
 }
 </style>
 <body>
-  <%- JSON.stringify(data) %>
     <nav class="navbar navbar-light bg-light" >
       <div class="dropdown" style="margin-left: 87% ;">
         <img src="/img/icons8-usuário-48.png"  type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -96,26 +95,28 @@
 
   </form>
   <br>
-
   <div class="container" style="margin-left: 15%; margin-top: -22%;">
     <h4>Academias: <%=quant[0].count%></h4>
-    <div class="row align-items-start" style="margin-bottom: 20px;">
+    <div class="row align-items-start" style="margin-bottom: 25px;">
       <% for(var i = 0; i<quant[0].count; i++) { %>
-        <div class="col">
-          <div class="card" style="width: 18rem;" data-bs-toggle="modal">
-            <%=JSON.stringify(data[i].dados)%>
-            <img src="data:image/png;base64,<%= image %>" />
-            <div class="card-body">
-              <h5 class="card-title"><p>Nome: <%= JSON.stringify(data[i].nome) %> </p>  </h5>
-              <p class="card-text"><p>Email: <%= JSON.stringify(data[i].email) %>e </p> 
-              <p>Endereço: <%= JSON.stringify(data[i].endereco)%> </p></p>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><a
-                  href="#" class="btn btn-primary">Go somewhere</a>
-              </button>
-            </div>
-          </div>
+      <div class="card" style="width: 18rem; margin: 25px;;" data-bs-toggle="modal">
+        <% if(!data[i].imagem){ %>
+          <img src="/img/olho.png"/>
+        <% } else { %>
+          <img src="data:image/png;base64,<%= imagem[i] %>" />
+        <% } %>
+        <div class="card-body">
+          <h5 class="card-title"><p>Nome: <%= JSON.stringify(data[i].nome) %> </p>  </h5>
+          <p class="card-text"><p>Email: <%= JSON.stringify(data[i].email) %>e </p> 
+          <p>Endereço: <%= JSON.stringify(data[i].endereco)%> </p></p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><a
+              href="#" class="btn btn-primary">Go somewhere</a>
+          </button>
         </div>
+      </div>
       <% } %>
+     </div>
+  </div>
 
   <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="staticBackdropLabel" aria-hidden="true">
