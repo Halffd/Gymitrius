@@ -11,9 +11,9 @@
 Acesse o site em: https://www,gymitrius.com/
 
 ## Executar
-Para executar use o cummadno
-git clone https://github.com/Halffd/Gymitrius.git
-cd Gymitrius
-npm install
-npm start (para teste) ou npm run build (para compilar)
-Depois acesse o site em http://localhost:3001
+### Para executar use o cummadno
+### git clone https://github.com/Halffd/Gymitrius.git
+### cd Gymitrius
+### npm install
+### npm start (para teste) ou npm run build (para compilar)
+## Depois acesse o site em http://localhost:3001
