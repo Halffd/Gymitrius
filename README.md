@@ -10,7 +10,13 @@
 ## Site
 Acesse o site em: https://www,gymitrius.com/
 
-## Executar
+## Executando
+
+### Requisitos
+#### Git: https://git-scm.com/downloads
+#### Node: https://nodejs.org/en/download/
+#### Npm: npm install -g npm
+
 ### Para executar use o cummadno
 ##### git clone https://github.com/Halffd/Gymitrius.git
 ##### cd Gymitrius
